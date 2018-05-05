@@ -40,7 +40,7 @@ public class MainActivity extends CordovaActivity
 //                    View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 //            decorView.setSystemUiVisibility(flag);
 //        }
-
+            System.out.println("觅艺");
         // enable Cordova apps to be started in the background
         Bundle extras = getIntent().getExtras();
         if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
