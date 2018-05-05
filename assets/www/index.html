@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta name=viewport content="width=device-width"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>demo001</title><style type=text/css>*{margin: 0;padding: 0;
+    	 
+    	  font-family: "Helvetica Neue",'Helvetica',"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    	}
+    	
+    	/*<link rel="stylesheet" href="static/css/font-awesome.css" />*/</style><script src=static/js/adaption.js></script><script src="" type=text/javascript></script><link rel=stylesheet href=static/css/font-awesome-4.7.0/css/font-awesome.css><link href=./static/css/app.c85db8bbbed8fdd014dd973eb6abece5.css rel=stylesheet></head><body style=""><div id=app><router-view></router-view></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.42bd4282983c23bc4168.js></script><script type=text/javascript src=./static/js/app.1a0042a27d9b573f8801.js></script></body><script>! function(e) {
+	function t(a) {
+		if(i[a]) return i[a].exports;
+		var n = i[a] = {
+			exports: {},
+			id: a,
+			loaded: !1
+		};
+		return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+	}
+	var i = {};
+	return t.m = e, t.c = i, t.p = "", t(0)
+}([function(e, t) {
+	"use strict";
+	Object.defineProperty(t, "__esModule", {
+		value: !0
+	});
+	var i = window;
+	t["default"] = i.flex = function(normal, e, t) {
+		var a = e || 100,
+			n = t || 1,
+			r = i.document,
+			o = navigator.userAgent,
+			d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+			l = o.match(/U3\/((\d+|\.){5,})/i),
+			c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+			p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+			s = i.devicePixelRatio || 1;
+		p || d && d[1] > 534 || c || (s = 1);
+		var u = normal ? 1 : 1 / s,
+			m = r.querySelector('meta[name="viewport"]');
+		m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = normal ? "50px" : a / 2 * s * n + "px"
+	}, e.exports = t["default"]
+}]);
+flex(false, 100, 1);</script></html>
